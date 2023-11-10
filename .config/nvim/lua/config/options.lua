@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 local opt = vim.opt
+local g = vim.g
 
 opt.relativenumber = false
 
