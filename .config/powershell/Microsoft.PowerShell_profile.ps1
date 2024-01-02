@@ -24,3 +24,34 @@ $GitPromptSettings.AfterStatus.ForegroundColor = [ConsoleColor]::Blue
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
+
+# Alias for 'git status'
+Set-Alias gs 'git status'
+
+# Alias for 'git add .'
+Set-Alias ga 'git add .'
+
+# Alias for 'git commit -m'
+Set-Alias gc 'git commit -m'
+
+# Alias for 'git pull'
+Set-Alias gpu 'git pull'
+
+# Alias for 'git push'
+Set-Alias gp 'git push'
+
+# Alias for 'git log'
+Set-Alias gl 'git log'
+
+# Alias for 'git branch'
+Set-Alias gb 'git branch'
+
+# Alias for 'git checkout'
+Set-Alias gco 'git checkout'
+
+# Alias for 'git merge'
+Set-Alias gm 'git merge'
+
+# Alias for 'git stash'
+Set-Alias gs 'git stash'
+
