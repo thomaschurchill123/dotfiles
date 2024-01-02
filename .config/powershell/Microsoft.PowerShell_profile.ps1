@@ -25,33 +25,48 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 
-# Alias for 'git status'
-Set-Alias gs 'git status'
+# Custom function for 'git status'
+function gs {
+    git status
+}
 
-# Alias for 'git add .'
-Set-Alias ga 'git add .'
+# Custom function for 'git add .'
+function ga {
+    git add .
+}
 
-# Alias for 'git commit -m'
-Set-Alias gc 'git commit -m'
+# Custom function for 'git commit -m'
+function gc {
+    param(
+        [string]$message
+    )
+    git commit -m $message
+}
 
-# Alias for 'git pull'
-Set-Alias gpu 'git pull'
+# Custom function for 'git pull'
+function gpu {
+    git pull
+}
 
-# Alias for 'git push'
-Set-Alias gp 'git push'
+# Custom function for 'git push'
+function gp {
+    git push
+}
 
-# Alias for 'git log'
-Set-Alias gl 'git log'
+# Custom function for 'git log'
+function gl {
+    git log
+}
 
-# Alias for 'git branch'
-Set-Alias gb 'git branch'
+# Custom function for 'git branch'
+function gb {
+    git branch
+}
 
-# Alias for 'git checkout'
-Set-Alias gco 'git checkout'
-
-# Alias for 'git merge'
-Set-Alias gm 'git merge'
-
-# Alias for 'git stash'
-Set-Alias gs 'git stash'
-
+# Custom function for 'git checkout'
+function gco {
+    param(
+        [string]$branch
+    )
+    git checkout $branch
+}
