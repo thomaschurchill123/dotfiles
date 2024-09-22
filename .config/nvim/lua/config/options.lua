@@ -3,3 +3,4 @@
 -- Add any additional options here
 
 vim.opt.relativenumber = false
+-- vim.opt.clipboard = "unnamedplus" -- Required if running in Windows/WSL with win32yank
