@@ -122,3 +122,4 @@ export PATH=$PATH:/home/tomc/.pulumi/bin
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+autoload -Uz compinit && compinit
